@@ -1,3 +1,5 @@
+console.log('Express server started!')
+
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
@@ -73,5 +75,5 @@ app.get('*',(req, res)=>{
 app.listen(3000, ()=> {
     console.log('Server is up on port 3000')
 
-    console.log(publicDirectoryPath + 'path')
+    console.log(publicDirectoryPath)
 });
